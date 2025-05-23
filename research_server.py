@@ -191,8 +191,12 @@ def generate_search_prompt(topic: str, num_papers: int = 5) -> str:
 if __name__ == "__main__":
     # Initialize and run the server
     import sys
+    import os
+    
     if len(sys.argv) > 1 and sys.argv[1] == "stdio":
         mcp.run()  # stdio transport
     else:
-        # Use streamable-http with proper mount path
-        mcp.run(transport='streamable-http', mount_path="/mcp")
+        # Use streamable-http with proper configuration for deployment
+        port = int(os.environ.get("PORT", 8000))
+        host = os.environ.get("HOST", "0.0.0.0")
+        mcp.run(transport='streamable-http', mount_path="/mcp", port=port, host=host)
