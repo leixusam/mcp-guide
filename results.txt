@@ -1,0 +1,26 @@
+# AI Reasoning Capabilities: Summary of Research
+
+After exploring deeplearning.ai, I identified "Reasoning" as a significant topic in current AI research. Recent articles from deeplearning.ai mention "Recipes For Reasoning" and "Easy Reasoning Hack," indicating this is an important frontier in AI development.
+
+## Paper 1: Commonsense Reasoning for Conversational AI: A Survey of the State of the Art
+- **Authors**: Christopher Richardson, Larry Heck
+- **Published**: February 15, 2023
+- **Key Points**:
+  - While large transformer models like BERT, GPT, and T5 have advanced conversational AI significantly, they still struggle with higher-level reasoning tasks
+  - The paper surveys approaches to incorporate commonsense reasoning in conversational AI
+  - The authors tested BlenderBot3 and LaMDA, finding limited commonsense capabilities that negatively impact natural interactions
+  - The research suggests that improving commonsense reasoning is crucial for advancing conversational AI
+
+## Paper 2: Thinking Machines: A Survey of LLM based Reasoning Strategies
+- **Authors**: Dibyanayan Bandyopadhyay, Soham Bhattacharjee, Asif Ekbal
+- **Published**: March 13, 2025
+- **Key Points**:
+  - Despite language proficiency, there remains a significant gap in reasoning abilities in Large Language Models (LLMs)
+  - Reasoning is essential for complex problem-solving and establishing trust in AI systems
+  - The paper mentions newer reasoning-focused models like OpenAI O1 and DeepSeek R1
+  - The authors provide a comparison of existing reasoning techniques and challenges in the field
+
+## Conclusions
+The research indicates that reasoning capabilities represent a critical frontier in AI development. While current language models excel at many language tasks, they still face significant challenges with higher-order reasoning that humans find intuitive. Improving reasoning abilities could enable more reliable AI applications in sensitive domains like healthcare, finance, law, and security.
+
+Recent models like OpenAI O1 and DeepSeek R1 appear to be specifically focused on addressing reasoning limitations, suggesting this is an active and evolving area of research that may lead to significant breakthroughs in AI capabilities.

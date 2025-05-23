@@ -1,0 +1,48 @@
+{
+  "astro-ph/0607350v1": {
+    "title": "Simple scaling laws for astrophysical jets",
+    "authors": [
+      "M. Huarte-Espinosa",
+      "S. Mendoza"
+    ],
+    "summary": "The idea of a unified model for all astrophysical jets has been considered\nfor quite some time. We present here a few scaling laws relevant to all type of\nastrophysical jets, analogous to those of \\citet{sams96} which are widely used\nfor astrophysical black holes. We use Buckingham's $ \\Pi $ theorem of\ndimensional analysis to obtain a family of dimensional relations among the\nphysical quantities associated to astrophysical jets.",
+    "pdf_url": "http://arxiv.org/pdf/astro-ph/0607350v1",
+    "published": "2006-07-15"
+  },
+  "0903.4884v1": {
+    "title": "Cosmic Accelerators",
+    "authors": [
+      "Jonathan Arons"
+    ],
+    "summary": "I discuss the scientific rationale and opportunities in the study of high\nenergy particle accelerators away from the Earth; mostly, those outside the\nSolar System. I also briefly outline the features to be desired in telescopes\nused to probe accelerators studied by remote sensing.",
+    "pdf_url": "http://arxiv.org/pdf/0903.4884v1",
+    "published": "2009-03-27"
+  },
+  "nucl-th/0007070v1": {
+    "title": "Prediction of nuclear reaction rates for astrophysics",
+    "authors": [
+      "T. Rauscher"
+    ],
+    "summary": "This is an overview over the prediction of astrophysical reaction rates in\nthe statistical model, with special emphasis on the parametrization of optical\nalpha+nucleus potentials.",
+    "pdf_url": "http://arxiv.org/pdf/nucl-th/0007070v1",
+    "published": "2000-07-28"
+  },
+  "nucl-th/0609006v1": {
+    "title": "Nuclear Astrophysics: CIPANP 2006",
+    "authors": [
+      "W. C. Haxton"
+    ],
+    "summary": "I review progress that has been made in nuclear astrophysics over the past\nfew years and summarize some of the questions that remain. Topics selected\ninclude solar neutrinos, supernovae (the explosion and associated\nnucleosynthesis), laboratory astrophysics, and neutron star structure.",
+    "pdf_url": "http://arxiv.org/pdf/nucl-th/0609006v1",
+    "published": "2006-09-03"
+  },
+  "1009.1542v1": {
+    "title": "The Role of Radioactivities in Astrophysics",
+    "authors": [
+      "Donald Clayton"
+    ],
+    "summary": "I present both a history of radioactivity in astrophysics and an introduction\nto the major applications of radioactive abundances to astronomy.",
+    "pdf_url": "http://arxiv.org/pdf/1009.1542v1",
+    "published": "2010-09-08"
+  }
+}

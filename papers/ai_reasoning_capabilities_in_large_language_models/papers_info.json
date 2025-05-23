@@ -1,0 +1,23 @@
+{
+  "2302.07926v1": {
+    "title": "Commonsense Reasoning for Conversational AI: A Survey of the State of the Art",
+    "authors": [
+      "Christopher Richardson",
+      "Larry Heck"
+    ],
+    "summary": "Large, transformer-based pretrained language models like BERT, GPT, and T5\nhave demonstrated a deep understanding of contextual semantics and language\nsyntax. Their success has enabled significant advances in conversational AI,\nincluding the development of open-dialogue systems capable of coherent, salient\nconversations which can answer questions, chat casually, and complete tasks.\nHowever, state-of-the-art models still struggle with tasks that involve higher\nlevels of reasoning - including commonsense reasoning that humans find trivial.\nThis paper presents a survey of recent conversational AI research focused on\ncommonsense reasoning. The paper lists relevant training datasets and describes\nthe primary approaches to include commonsense in conversational AI. The paper\nalso discusses benchmarks used for evaluating commonsense in conversational AI\nproblems. Finally, the paper presents preliminary observations of the limited\ncommonsense capabilities of two state-of-the-art open dialogue models,\nBlenderBot3 and LaMDA, and its negative effect on natural interactions. These\nobservations further motivate research on commonsense reasoning in\nconversational AI.",
+    "pdf_url": "http://arxiv.org/pdf/2302.07926v1",
+    "published": "2023-02-15"
+  },
+  "2503.10814v1": {
+    "title": "Thinking Machines: A Survey of LLM based Reasoning Strategies",
+    "authors": [
+      "Dibyanayan Bandyopadhyay",
+      "Soham Bhattacharjee",
+      "Asif Ekbal"
+    ],
+    "summary": "Large Language Models (LLMs) are highly proficient in language-based tasks.\nTheir language capabilities have positioned them at the forefront of the future\nAGI (Artificial General Intelligence) race. However, on closer inspection,\nValmeekam et al. (2024); Zecevic et al. (2023); Wu et al. (2024) highlight a\nsignificant gap between their language proficiency and reasoning abilities.\nReasoning in LLMs and Vision Language Models (VLMs) aims to bridge this gap by\nenabling these models to think and re-evaluate their actions and responses.\nReasoning is an essential capability for complex problem-solving and a\nnecessary step toward establishing trust in Artificial Intelligence (AI). This\nwill make AI suitable for deployment in sensitive domains, such as healthcare,\nbanking, law, defense, security etc. In recent times, with the advent of\npowerful reasoning models like OpenAI O1 and DeepSeek R1, reasoning endowment\nhas become a critical research topic in LLMs. In this paper, we provide a\ndetailed overview and comparison of existing reasoning techniques and present a\nsystematic survey of reasoning-imbued language models. We also study current\nchallenges and present our findings.",
+    "pdf_url": "http://arxiv.org/pdf/2503.10814v1",
+    "published": "2025-03-13"
+  }
+}

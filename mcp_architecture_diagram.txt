@@ -1,0 +1,67 @@
+```
++-------------------------------------------------------------------------------------------------------------+
+|                                   MODEL CONTEXT PROTOCOL (MCP) ARCHITECTURE                                  |
++-------------------------------------------------------------------------------------------------------------+
+
++------------------------+                                                  +---------------------------+
+|        HOST            |                                                  |          SERVER           |
+| (LLM application like  |                                                  | (Provides context, tools, |
+|  Claude Desktop/IDE)   |                                                  |  and prompts to clients)  |
++------------------------+                                                  +---------------------------+
+          |                                                                             ^
+          | Contains                                                                    |
+          v                                                                             |
++------------------------+                                                              |
+|        CLIENT          |<------------------------------------------------------------>|
+| (Maintains 1:1 conn    |                 Communication via Protocol                   |
+|  with server)          |                                                              |
++------------------------+                                                              |
+                                                                                        
+                PROTOCOL LAYERS
++-------------------------------------------------------------------------------------------------------------+
+|                                            PROTOCOL LAYER                                                    |
+|                                                                                                             |
+|     +----------------+         +----------------+         +----------------+                                |
+|     |    Protocol    |         |     Client     |         |     Server     |                                |
+|     +----------------+         +----------------+         +----------------+                                |
++-------------------------------------------------------------------------------------------------------------+
+|                                            TRANSPORT LAYER                                                   |
+|                                                                                                             |
+|     +--------------------------------------+    +-------------------------------------------+               |
+|     |           Stdio Transport            |    |         HTTP with SSE Transport           |               |
+|     | - Standard input/output              |    | - Server-Sent Events (server→client)      |               |
+|     | - Ideal for local processes          |    | - HTTP POST (client→server)               |               |
+|     +--------------------------------------+    +-------------------------------------------+               |
+|                                                                                                             |
+|                       All transports use JSON-RPC 2.0 for message exchange                                  |
++-------------------------------------------------------------------------------------------------------------+
+
+                MESSAGE TYPES                                CONNECTION LIFECYCLE
++----------------------------------------+        +------------------------------------------------+
+|                                        |        |                                                |
+| +------------+      +-------------+    |        |   1. INITIALIZATION                            |
+| | Requests   |----->|  Results    |    |        |      - Client sends initialize request        |
+| +------------+      +-------------+    |        |      - Server responds with capabilities      |
+|                                        |        |      - Client sends initialized notification  |
+| +------------+      +-------------+    |        |                                                |
+| | Errors     |      |Notifications|    |        |   2. MESSAGE EXCHANGE                         |
+| +------------+      +-------------+    |        |      - Request-Response pattern               |
+|                                        |        |      - Notifications (one-way messages)       |
++----------------------------------------+        |                                                |
+                                                  |   3. TERMINATION                               |
+                                                  |      - Clean shutdown (close())               |
+                                                  |      - Transport disconnection                |
+                                                  |      - Error conditions                       |
+                                                  +------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------------------+
+|                                    BEST PRACTICES & CONSIDERATIONS                                           |
++---------------------------+---------------------------+------------------------+---------------------------+
+|   TRANSPORT SELECTION     |    MESSAGE HANDLING       |      SECURITY          |  DEBUGGING & MONITORING   |
+|                           |                           |                        |                           |
+| - Stdio for local         | - Validate inputs         | - TLS for remote       | - Log protocol events     |
+| - SSE for HTTP            | - Type-safe schemas       | - Validate origins     | - Track message flow      |
+| - Consider security       | - Error handling          | - Authentication       | - Monitor performance     |
+|                           | - Progress reporting      | - Message validation   | - Health checks           |
++---------------------------+---------------------------+------------------------+---------------------------+
+```

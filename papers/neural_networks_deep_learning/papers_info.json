@@ -1,0 +1,52 @@
+{
+  "2106.00120v3": {
+    "title": "Probabilistic Deep Learning with Probabilistic Neural Networks and Deep Probabilistic Models",
+    "authors": [
+      "Daniel T. Chang"
+    ],
+    "summary": "Probabilistic deep learning is deep learning that accounts for uncertainty,\nboth model uncertainty and data uncertainty. It is based on the use of\nprobabilistic models and deep neural networks. We distinguish two approaches to\nprobabilistic deep learning: probabilistic neural networks and deep\nprobabilistic models. The former employs deep neural networks that utilize\nprobabilistic layers which can represent and process uncertainty; the latter\nuses probabilistic models that incorporate deep neural network components which\ncapture complex non-linear stochastic relationships between the random\nvariables. We discuss some major examples of each approach including Bayesian\nneural networks and mixture density networks (for probabilistic neural\nnetworks), and variational autoencoders, deep Gaussian processes and deep mixed\neffects models (for deep probabilistic models). TensorFlow Probability is a\nlibrary for probabilistic modeling and inference which can be used for both\napproaches of probabilistic deep learning. We include its code examples for\nillustration.",
+    "pdf_url": "http://arxiv.org/pdf/2106.00120v3",
+    "published": "2021-05-31"
+  },
+  "1805.03551v2": {
+    "title": "A Unified Framework of Deep Neural Networks by Capsules",
+    "authors": [
+      "Yujian Li",
+      "Chuanhui Shan"
+    ],
+    "summary": "With the growth of deep learning, how to describe deep neural networks\nunifiedly is becoming an important issue. We first formalize neural networks\nmathematically with their directed graph representations, and prove a\ngeneration theorem about the induced networks of connected directed acyclic\ngraphs. Then, we set up a unified framework for deep learning with capsule\nnetworks. This capsule framework could simplify the description of existing\ndeep neural networks, and provide a theoretical basis of graphic designing and\nprogramming techniques for deep learning models, thus would be of great\nsignificance to the advancement of deep learning.",
+    "pdf_url": "http://arxiv.org/pdf/1805.03551v2",
+    "published": "2018-05-09"
+  },
+  "1911.07626v1": {
+    "title": "Convex Formulation of Overparameterized Deep Neural Networks",
+    "authors": [
+      "Cong Fang",
+      "Yihong Gu",
+      "Weizhong Zhang",
+      "Tong Zhang"
+    ],
+    "summary": "Analysis of over-parameterized neural networks has drawn significant\nattention in recentyears. It was shown that such systems behave like convex\nsystems under various restrictedsettings, such as for two-level neural\nnetworks, and when learning is only restricted locally inthe so-called neural\ntangent kernel space around specialized initializations. However, there areno\ntheoretical techniques that can analyze fully trained deep neural networks\nencountered inpractice. This paper solves this fundamental problem by\ninvestigating such overparameterizeddeep neural networks when fully trained. We\ngeneralize a new technique called neural feature repopulation, originally\nintroduced in (Fang et al., 2019a) for two-level neural networks, to analyze\ndeep neural networks. It is shown that under suitable representations,\noverparameterized deep neural networks are inherently convex, and when\noptimized, the system can learn effective features suitable for the underlying\nlearning task under mild conditions. This new analysis is consistent with\nempirical observations that deep neural networks are capable of learning\nefficient feature representations. Therefore, the highly unexpected result of\nthis paper can satisfactorily explain the practical success of deep neural\nnetworks. Empirical studies confirm that predictions of our theory are\nconsistent with results observed in practice.",
+    "pdf_url": "http://arxiv.org/pdf/1911.07626v1",
+    "published": "2019-11-18"
+  },
+  "1701.05549v1": {
+    "title": "Deep Neural Networks - A Brief History",
+    "authors": [
+      "Krzysztof J. Cios"
+    ],
+    "summary": "Introduction to deep neural networks and their history.",
+    "pdf_url": "http://arxiv.org/pdf/1701.05549v1",
+    "published": "2017-01-19"
+  },
+  "1805.01891v1": {
+    "title": "Power Law in Sparsified Deep Neural Networks",
+    "authors": [
+      "Lu Hou",
+      "James T. Kwok"
+    ],
+    "summary": "The power law has been observed in the degree distributions of many\nbiological neural networks. Sparse deep neural networks, which learn an\neconomical representation from the data, resemble biological neural networks in\nmany ways. In this paper, we study if these artificial networks also exhibit\nproperties of the power law. Experimental results on two popular deep learning\nmodels, namely, multilayer perceptrons and convolutional neural networks, are\naffirmative. The power law is also naturally related to preferential\nattachment. To study the dynamical properties of deep networks in continual\nlearning, we propose an internal preferential attachment model to explain how\nthe network topology evolves. Experimental results show that with the arrival\nof a new task, the new connections made follow this preferential attachment\nprocess.",
+    "pdf_url": "http://arxiv.org/pdf/1805.01891v1",
+    "published": "2018-05-04"
+  }
+}
