@@ -3,7 +3,7 @@ services:
     name: mcp-research-server
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
+    startCommand: python research_server.py
     plan: free
     envVars:
       - key: PYTHON_VERSION

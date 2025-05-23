@@ -7,7 +7,9 @@ from mcp.server.fastmcp import FastMCP
 PAPER_DIR = "papers"
 
 # Initialize FastMCP server
-mcp = FastMCP("research", stateless_http=True)
+import os
+port = int(os.environ.get("PORT", 8000))
+mcp = FastMCP("research", stateless_http=True, host="0.0.0.0", port=port)
 
 @mcp.tool()
 def search_papers(topic: str, max_results: int = 5) -> List[str]:
@@ -196,7 +198,6 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "stdio":
         mcp.run()  # stdio transport
     else:
-        # Use streamable-http with proper configuration for deployment
-        port = int(os.environ.get("PORT", 8000))
-        host = os.environ.get("HOST", "0.0.0.0")
-        mcp.run(transport='streamable-http', mount_path="/mcp", port=port, host=host)
+        # Use streamable-http transport - let it use default settings
+        # Port will be set by environment (Render provides PORT)
+        mcp.run(transport='streamable-http')
